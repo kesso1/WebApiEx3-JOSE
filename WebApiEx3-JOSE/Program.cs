@@ -12,11 +12,10 @@ namespace WebApiEx3_JOSE
     class Program
     {
         private static string clientCert = @"C:\temp\ottiCA\ClientCert.pfx";
-        private static string clientCertPublic = @"C:\temp\ottiCA\ClientCert.cer";
         static void Main(string[] args)
         {
             createSigningToken();
-            //createEncryptionToken();
+            createEncryptionToken();
         }
 
         public static void createEncryptionToken()
